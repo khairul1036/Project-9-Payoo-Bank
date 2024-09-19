@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Payoo Bank</title>
-    <link rel="shortcut icon" href="image/payoo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/payoo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -13,19 +13,77 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="flex justify-center mt-10">
+    <main class="flex justify-center">
       <div class="mockup-phone">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-1">
+          <div class="artboard artboard-demo phone-3">
+            <div class="flex justify-between gap-14 items-center px-2">
+              <div class="flex items-center gap-2">
+                <div>
+                  <img class="w-10" src="image/payoo.png" alt="logo" />
+                </div>
+                <div>
+                  <h1 id="pre-amount" class="font-bold text-xl">4500</h1>
+                  <p class="text-gray-600">Available Balance</p>
+                </div>
+              </div>
+              <div>
+                <button class="btn">Logout</button>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="px-2 mb-5">
+              <h1 class="font-bold text-xl my-4">🔥 Welcome to Payooo!</h1>
+              <p class="text-gray-600">
+                Enjoy easy and convenient financial services with us. Cashout
+                charge is low and
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-2 px-4">
+              <div>
+                <button id="btn-add-money" class="btn">Add Money</button>
+              </div>
+              <div>
+                <button class="btn">Cashout</button>
+              </div>
+              <div>
+                <button class="btn">Transfer Money</button>
+              </div>
+              <div>
+                <button class="btn">Get Bonus</button>
+              </div>
+              <div>
+                <button class="btn">Pay Bill</button>
+              </div>
+              <div>
+                <button class="btn">Transaction</button>
+              </div>
+            </div>
 
-            
-
+            <div class="my-5 bg-white px-10 py-5">
+              <form action="">
+                <label for="">Amount</label>
+                <input id="amount-input"
+                  type="text"
+                  placeholder="Add Amount"
+                  class="mb-5 input input-bordered input-info w-full"
+                />
+                <label for="">PIN</label>
+                <input id="pin-input"
+                  type="password"
+                  placeholder="Pin number"
+                  class="mb-5 input input-bordered input-info w-full"
+                />
+                <div class="flex justify-center">
+                    <button id="btn-add-money-input" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
-    <script src="js/login.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
