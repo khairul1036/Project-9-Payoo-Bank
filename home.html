@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Payoo Bank</title>
-    <link rel="shortcut icon" href="image/payoo.png" type="image/x-icon" />
+    <title>Payoo Bank</title>
+    <link rel="shortcut icon" href="image/payoo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/70d1331392.js" crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -12,78 +13,139 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <main class="flex justify-center">
-      <div class="mockup-phone">
-        <div class="camera"></div>
-        <div class="display">
-          <div class="artboard artboard-demo phone-3">
-            <div class="flex justify-between gap-14 items-center px-2">
-              <div class="flex items-center gap-2">
-                <div>
-                  <img class="w-10" src="image/payoo.png" alt="logo" />
-                </div>
-                <div>
-                  <h1 id="pre-amount" class="font-bold text-xl">4500</h1>
-                  <p class="text-gray-600">Available Balance</p>
-                </div>
-              </div>
-              <div>
-                <button class="btn">Logout</button>
-              </div>
+  <body class="bg-white">
+    <main>
+      <div class="flex justify-between items-center pt-8 px-4">
+        <div class="flex items-center gap-2">
+            <div>
+                <img class="w-12" src="image/payoo.png" alt="">
             </div>
-            <div class="divider"></div>
-            <div class="px-2 mb-5">
-              <h1 class="font-bold text-xl my-4">🔥 Welcome to Payooo!</h1>
-              <p class="text-gray-600">
-                Enjoy easy and convenient financial services with us. Cashout
-                charge is low and
-              </p>
+            <div>
+                <h1 id="current-balance" class="text-xl font-bold">45000</h1>
+                <p class="text-xs text-gray-500">Availabe Balance</p>
             </div>
-            <div class="grid grid-cols-3 gap-2 px-4">
-              <div>
-                <button id="btn-add-money" class="btn">Add Money</button>
-              </div>
-              <div>
-                <button class="btn">Cashout</button>
-              </div>
-              <div>
-                <button class="btn">Transfer Money</button>
-              </div>
-              <div>
-                <button class="btn">Get Bonus</button>
-              </div>
-              <div>
-                <button class="btn">Pay Bill</button>
-              </div>
-              <div>
-                <button class="btn">Transaction</button>
-              </div>
+        </div>
+        <a href="index.html">
+            <div class="flex items-center gap-2 bg-red-200 p-2 rounded-xl hover:bg-red-300">
+                <h1>Logout</h1>
+                <i class="fa-solid fa-right-from-bracket"></i>
             </div>
+        </a>
+      </div>
+      <div class="divider"></div>
 
-            <div class="my-5 bg-white px-10 py-5">
-              <form action="">
-                <label for="">Amount</label>
-                <input id="amount-input"
-                  type="text"
-                  placeholder="Add Amount"
-                  class="mb-5 input input-bordered input-info w-full"
-                />
-                <label for="">PIN</label>
-                <input id="pin-input"
-                  type="password"
-                  placeholder="Pin number"
-                  class="mb-5 input input-bordered input-info w-full"
-                />
-                <div class="flex justify-center">
-                    <button id="btn-add-money-input" class="btn btn-primary">Add Money</button>
-                </div>
-              </form>
+      <!-- text content start -->
+       <div class=" px-4">
+        <h1 class="text-xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
+        <p class="text-gray-500 text-sm">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+       </div>
+       <!-- text content end  -->
+
+       <!-- feature buttons start-->
+        <div class="grid grid-cols-3 gap-5 px-4 my-5">
+            <!-- add money card -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-green-600"></i>
+                <p class="text-sm text-gray-600">Add Money</p>
             </div>
+            <!-- Cashout card -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-red-600"></i>
+                <p class="text-sm text-gray-600">Cashout</p>
+            </div>
+            <!-- Transfer Money -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-gray-600"></i>
+                <p class="text-sm text-gray-600">Transfer Money</p>
+            </div>
+            <!-- get bonus  -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-gray-600"></i>
+                <p class="text-sm text-gray-600">Get Bonus</p>
+            </div>
+            <!-- pay bill  -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-gray-600"></i>
+                <p class="text-sm text-gray-600">Pay Bill</p>
+            </div>
+            <!-- Transactions -->
+            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+                <i class="fa-solid fa-money-bill-wave text-gray-600"></i>
+                <p class="text-sm text-gray-600">Transactions</p>
+            </div>
+        </div>
+       <!-- feature buttons end-->
+
+       <!-- Latest Payment start  -->
+        
+       <!-- Latest Payment end -->
+
+       <!-- add money form content start -->
+        <div class="bg-gray-200 py-8 rounded-t-xl hidden">
+            <div class="bg-white rounded-xl mx-4 px-4 py-5">
+                <h1 class="text-lg font-semibold mb-4">Add Money</h1>
+                <form action="">
+                  <label class="text-sm text-gray-500" for="">Select A Bank</label>
+                  <br>
+                   <select name="" id="" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5">
+                    <option value="">Select Bank</option>
+                    <option value="dbbl">DBBL</option>
+                    <option value="amarbank">Amar Bank</option>
+                    <option value="meuagent">Meu Meu Agent</option>
+                   </select>
+                  <br>
+                  <label class="text-sm text-gray-500" for="">Bank Account Number</label>
+                  <br>
+                  <input id="bank-number-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="number" placeholder="Enter 11 digit account number">
+                  <br>
+                  <label class="text-sm text-gray-500" for="">Amount to Add</label>
+                  <br>
+                  <input id="add-money-amount-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="number" placeholder="Add Amount to withdraw">
+                  <br>
+                  <label class="text-sm text-gray-500" for="">Pin Number</label>
+                  <br>
+                  <input id="pin-number-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="password" placeholder="Enter 4 digit pin number">
+                  <br>
+                  <div class="bg-[#0874F2] text-white flex justify-center w-full mt-2 px-4 py-2 rounded-full mb-5 hover:bg-[#0868D7]">
+                    <button id="btn-add-money" type="submit">Add Money</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+       <!-- add money form content end -->
+
+       <!-- Cashout form content start -->
+       <div class="bg-gray-200 py-8 rounded-t-xl">
+        <div class="bg-white rounded-xl mx-4 px-4 py-5">
+            <h1 class="text-lg font-semibold mb-4">Cash Out</h1>
+            <form action="">
+              <label class="text-sm text-gray-500" for="">Agent Number</label>
+              <br>
+              <input id="agent-number-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="number" placeholder="Enter 11 digit number">
+              <br>
+              <label class="text-sm text-gray-500" for="">Amount</label>
+              <br>
+              <input id="cashout-amount-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="number" placeholder="Add Amount to withdraw">
+              <br>
+              <label class="text-sm text-gray-500" for="">Pin Number</label>
+              <br>
+              <input id="pin-cashout-input" class="bg-gray-200 text-sm w-full mt-2 px-4 py-2 rounded-full mb-5" type="password" placeholder="Enter 4 digit pin number">
+              <br>
+              <div class="bg-[#0874F2] text-white flex justify-center w-full mt-2 px-4 py-2 rounded-full mb-5 hover:bg-[#0868D7]">
+                <button id="btn-cash-out" type="submit">Withdraw Money</button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
+       <!-- Cashout form content end -->
+
+
+       
+
     </main>
-    <script src="js/home.js"></script>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/add-money.js"></script>
+    <script src="js/cashout.js"></script>
   </body>
 </html>

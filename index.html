@@ -12,43 +12,30 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <main class="flex justify-center mt-10">
-      <div class="mockup-phone">
-        <div class="camera"></div>
-        <div class="display">
-          <div class="artboard artboard-demo phone-1">
-
-            <div class="hero bg-base-200 min-h-screen">
-                <div class="hero-content">
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <form class="card-body">
-                      <div class="form-control">
-                        <label class="label">
-                          <span class="label-text">Phone</span>
-                        </label>
-                        <input id="phone-number" type="text" placeholder="Your Phone Number" class="input input-bordered" required />
-                      </div>
-                      <div class="form-control">
-                        <label class="label">
-                          <span class="label-text">PIN</span>
-                        </label>
-                        <input id="pin-number" type="password" placeholder="Your Pin Number" class="input input-bordered" required />
-                        <label class="label">
-                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                        </label>
-                      </div>
-                      <div class="form-control mt-6">
-                        <button id="btn-login" class="btn btn-primary">Login</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-        </div>
+  <body class="bg-gray-300">
+    <main class="py-16">
+      <div class="flex justify-center mb-5">
+        <img class="w-32 border-2 border-sky-700 rounded-full p-3" src="image/payoo.png" alt="">
       </div>
+
+      <!-- login form start -->
+      <div class="bg-white rounded-xl mx-5 px-5 py-10">
+        <form action="">
+          <label class="text-lg font-semibold" for="">Mobile Number</label>
+          <br>
+          <input id="number-input" class="bg-gray-300 w-full mt-2 px-4 py-2 rounded-full mb-5" type="number" placeholder="Enter your number">
+          
+          <br>
+          <label class="text-lg font-semibold" for="">4 Digit Pin</label>
+          <br>
+          <input id="pin-input" class="bg-gray-300 w-full mt-2 px-4 py-2 rounded-full mb-5" type="password" autocomplete="off" placeholder="Enter 4 Digit Pin">
+          <br>
+          <div class="bg-[#0874F2] text-white flex justify-center w-full mt-2 px-4 py-2 rounded-full mb-5 hover:bg-[#0868D7]">
+            <button id="btn-login" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+      <!-- login form end -->
     </main>
 
     <script src="js/login.js"></script>

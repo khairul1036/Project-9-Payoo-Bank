@@ -1,16 +1,14 @@
-document.getElementById('btn-login').addEventListener('click',function(event){
-    event.preventDefault();
-    
-    const phoneNumber = document.getElementById('phone-number').value;
-    const pinNumber = document.getElementById('pin-number').value;
+document.getElementById('btn-login')
+    .addEventListener('click',function(event){
+        event.preventDefault();
+        
+        const mobileNumber = document.getElementById('number-input').value;
+        const pinNumber = document.getElementById('pin-input').value;
 
-    // console.log(phoneNumber,pinNumber);
-    if(phoneNumber === '5' && pinNumber === '1234'){
-        // console.log('login');
-        window.location.href = 'home.html';
-    }
-    else{
-        alert('Wrong Number or PIN');
-    }
-
-})
+        if(pinNumber === '1234'){
+            window.location.href = '/home.html';
+        }
+        else{
+            alert('Wrong number or pin..');
+        }
+    });
