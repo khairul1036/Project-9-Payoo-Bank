@@ -6,7 +6,7 @@ document.getElementById('btn-login')
         const pinNumber = document.getElementById('pin-input').value;
 
         if(pinNumber === '1234'){
-            window.location.href = '/home.html';
+            window.location.href = 'home.html';
         }
         else{
             alert('Wrong number or pin..');

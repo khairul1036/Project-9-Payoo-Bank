@@ -44,12 +44,12 @@
        <!-- feature buttons start-->
         <div class="grid grid-cols-3 gap-5 px-4 my-5">
             <!-- add money card -->
-            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+            <div id="btn-add-money" class="text-center border border-stone-200 shadow-md rounded-xl py-3">
                 <i class="fa-solid fa-money-bill-wave text-green-600"></i>
                 <p class="text-sm text-gray-600">Add Money</p>
             </div>
             <!-- Cashout card -->
-            <div class="text-center border border-stone-200 shadow-md rounded-xl py-3">
+            <div id="btn-cashout" class="text-center border border-stone-200 shadow-md rounded-xl py-3">
                 <i class="fa-solid fa-money-bill-wave text-red-600"></i>
                 <p class="text-sm text-gray-600">Cashout</p>
             </div>
@@ -81,7 +81,7 @@
        <!-- Latest Payment end -->
 
        <!-- add money form content start -->
-        <div class="bg-gray-200 py-8 rounded-t-xl hidden">
+        <div id="add-money-form" class="bg-gray-200 py-8 rounded-t-xl">
             <div class="bg-white rounded-xl mx-4 px-4 py-5">
                 <h1 class="text-lg font-semibold mb-4">Add Money</h1>
                 <form action="">
@@ -115,7 +115,7 @@
        <!-- add money form content end -->
 
        <!-- Cashout form content start -->
-       <div class="bg-gray-200 py-8 rounded-t-xl">
+       <div id="cashout-form" class="bg-gray-200 py-8 rounded-t-xl hidden">
         <div class="bg-white rounded-xl mx-4 px-4 py-5">
             <h1 class="text-lg font-semibold mb-4">Cash Out</h1>
             <form action="">
@@ -140,12 +140,13 @@
        <!-- Cashout form content end -->
 
 
-       
+
 
     </main>
 
     <script src="js/utilities.js"></script>
     <script src="js/add-money.js"></script>
     <script src="js/cashout.js"></script>
+    <script src="js/features-btn.js"></script>
   </body>
 </html>
